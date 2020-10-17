@@ -30,7 +30,10 @@ Tests:
 
 Appears to pass tests.
 
-Not rigorously tested but works according to quick few checks via google.
+notes:
+
+ma
+
 
  */
 
@@ -40,11 +43,11 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        System.out.println(calcFeetAndInchesToCentimeters(6,2));
+        System.out.println(calcFeetAndInchesToCentimeters(500));
     }
 
     public static double calcFeetAndInchesToCentimeters(double feet, double inches){
-       if (inches < 0 || inches > 12 || feet <= 0 ) {
+       if (inches < 0 || inches > 12 || feet < 0 ) {
            System.out.println("Invalid feet and/ or inches parameters");
            return -1;}
 
@@ -53,6 +56,7 @@ public class Main {
             double inchesToCentimetres = inches * 2.54;
            double centimeters = feetToInchesToCentimetres + inchesToCentimetres;
             System.out.println(feet + " feet, " + inches + " inches = " + centimeters + " cm." );
+
             return centimeters;
        }
     }
@@ -63,10 +67,15 @@ public class Main {
             System.out.println("Invalid feet inches parameter");
             return -1;}
 
+        else if (inches < 13) {
+            return calcFeetAndInchesToCentimeters(0, inches);
+        }
+
         else {
             double inchesToFeet = inches / 12;
-            double remainderInches = inches % 12;
-            return calcFeetAndInchesToCentimeters(inchesToFeet, remainderInches);
+            double feet = (int) (inchesToFeet);
+            double remainderInches = inches - (feet*12);
+            return calcFeetAndInchesToCentimeters(feet, remainderInches);
 
         }
     }
