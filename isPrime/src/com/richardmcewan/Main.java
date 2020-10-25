@@ -7,14 +7,14 @@ public class Main {
         //my version
         checkPrime(1,101);
         //Tim version
-        System.out.println("******************");
+        System.out.println("\n******************");
         int count = 0;
         for(int i=10; i<50;i++){
             if(isPrime(i)){
                 count++;
                 System.out.println("Number " + i + " is a prime number");
                 if(count == 3){
-                    System.out.println("exiting for loop");
+                    System.out.println("Exiting for loop");
                     break;
                 }
             }
@@ -28,7 +28,7 @@ public class Main {
             return false;
         }
 
-        for(int i=2; i <=n/2; i++){
+        for(int i=2; i <= (long) Math.sqrt(n); i++){
             if(n % i == 0){
                 return false;
             }
