@@ -4,7 +4,22 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //my version
         checkPrime(1,101);
+        //Tim version
+        System.out.println("******************");
+        int count = 0;
+        for(int i=10; i<50;i++){
+            if(isPrime(i)){
+                count++;
+                System.out.println("Number " + i + " is a prime number");
+                if(count == 3){
+                    System.out.println("exiting for loop");
+                    break;
+                }
+            }
+        }
+
     }
 
     public static boolean isPrime(int n){
@@ -24,7 +39,7 @@ public class Main {
     public static void checkPrime(int start, int end ){
         int count = 0;
         for(int i=start; i < end+1; i++){
-            if(isPrime(i)==true){
+            if(isPrime(i)){
                 System.out.format("\n%d prime is: " + i, count+1);
                 count +=1;
                 if(count==25) {
