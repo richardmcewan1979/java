@@ -1,0 +1,7 @@
+//String to int
+String numberAsString = "12345";
+int numberAsInt = Integer.parseInt(numberAsString);
+        
+        //int to String
+        int anotherNumberAsInt = 9876; 
+        String backToNumberAsString = String.valueOf(anotherNumberAsInt);
