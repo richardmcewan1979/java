@@ -15,28 +15,27 @@ public class Main {
 
     }
 
+    public class LargestPrime {
+    
     public static int getLargestPrime(int number){
         if(number < 2) return -1;
-
-        int prime = number;
+     
+        // int prime = number;
         int i = 2;
-
+     
         while (i < number){
             if(number % i == 0 ){
-                System.out.println("i= " + i);
-                number = number / i;
-                prime = number;
+                // number = number / i;
+                // prime = number;
+                number /= i; // use this instead
                 i--;
-
+     
             }
-            //prime = number;
             i++;
         }
-
-
-
-        return prime;
+        // return prime;
+        return number; // simplifies what to return
     }
-
+    }
     //end of main curly
 }
