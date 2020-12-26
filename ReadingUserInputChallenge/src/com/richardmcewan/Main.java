@@ -21,7 +21,6 @@ close scanner after not needing
 
  */
 
-
 import java.util.Scanner;
 
 public class Main {
@@ -41,6 +40,7 @@ public class Main {
             numbersToCount = scanner.nextInt();
             scanner.nextLine(); //handle next line character
         } else {
+            scanner.close();
             System.out.println("Input Invalid");
             System.out.println("Programme terminating...");
             System.exit(17);
