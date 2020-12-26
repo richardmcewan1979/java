@@ -54,7 +54,7 @@ public class Main {
             if(hasNextInt){
             int number = scanner.nextInt();
             sum += number;
-            counter +=1;
+            counter ++;
             } else {
                 System.out.println("Invalid Number");
                 System.out.println();
