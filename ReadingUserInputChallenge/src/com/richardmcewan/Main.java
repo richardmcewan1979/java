@@ -56,7 +56,6 @@ public class Main {
             sum += number;
             counter ++;
             } else {
-                scanner.close();
                 System.out.println("Invalid Number");
                 System.out.println();
 
