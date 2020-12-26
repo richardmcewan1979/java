@@ -21,6 +21,7 @@ close scanner after not needing
 
  */
 
+
 import java.util.Scanner;
 
 public class Main {
@@ -32,10 +33,10 @@ public class Main {
         int counter = 1;
         int numbersToCount = 1;
 
-        System.out.println("How many number do you wish to sum?");
-        
+        //
+
+        System.out.println("How many numbers do you wish to sum?");
         boolean checkNextInt = scanner.hasNextInt();
-        
         if (checkNextInt){
             numbersToCount = scanner.nextInt();
             scanner.nextLine(); //handle next line character
@@ -55,6 +56,7 @@ public class Main {
             sum += number;
             counter ++;
             } else {
+                scanner.close();
                 System.out.println("Invalid Number");
                 System.out.println();
 
@@ -63,6 +65,5 @@ public class Main {
         }
         scanner.close();
         System.out.println("The sum of 10 numbers is: " + sum);
-        System.out.println("Programme complete.");
     }
 }
