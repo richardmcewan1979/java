@@ -53,15 +53,14 @@ public class Main {
 
             if(hasNextInt){
             int number = scanner.nextInt();
-            scanner.nextLine(); //handle next line character
             sum += number;
             counter +=1;
             } else {
                 System.out.println("Invalid Number");
                 System.out.println();
-                scanner.nextLine(); //handle next line character
-            }
 
+            }
+            scanner.nextLine(); //handle next line character
         }
         scanner.close();
         System.out.println("the sum of 10 numbers is: " + sum);
