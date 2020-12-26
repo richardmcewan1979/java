@@ -63,6 +63,6 @@ public class Main {
         }
         scanner.close();
         System.out.println("The sum of 10 numbers is: " + sum);
-        System.out.println("Programme complete.);
+        System.out.println("Programme complete.");
     }
 }
