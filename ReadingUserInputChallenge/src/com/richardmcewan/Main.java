@@ -32,10 +32,10 @@ public class Main {
         int counter = 1;
         int numbersToCount = 1;
 
-        //
-
         System.out.println("How many number do you wish to sum?");
+        
         boolean checkNextInt = scanner.hasNextInt();
+        
         if (checkNextInt){
             numbersToCount = scanner.nextInt();
             scanner.nextLine(); //handle next line character
@@ -44,7 +44,6 @@ public class Main {
             System.out.println("Programme terminating...");
             System.exit(17);
         }
-
 
 
         while(counter < (numbersToCount+1)){
@@ -63,6 +62,7 @@ public class Main {
             scanner.nextLine(); //handle next line character
         }
         scanner.close();
-        System.out.println("the sum of 10 numbers is: " + sum);
+        System.out.println("The sum of 10 numbers is: " + sum);
+        System.out.println("Programme complete.);
     }
 }
