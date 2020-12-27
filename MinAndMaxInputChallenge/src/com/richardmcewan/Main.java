@@ -6,10 +6,9 @@ nice bug was here:
 if user entered a min greater than zero
 console returned 0
 
-Two possibly solutions
+Two possibly solutions, both implemented below for future reference.
 1) enter Integer min and max to guarantee user overwrites
 2) add a flag for first go around to assign user value to min and max
-both implemented below for future reference.
 
  */
 
