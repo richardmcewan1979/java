@@ -2,6 +2,7 @@ package com.richardmcewan;
 
 /*
 Document stuff here
+Not implicit constructor query to come back to.
  */
 
 public class Car {
