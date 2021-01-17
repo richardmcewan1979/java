@@ -7,7 +7,7 @@ public class Main {
         ComplexNumber alpha = new ComplexNumber(1.0, 1.0);
         ComplexNumber beta = new ComplexNumber(2.5, -1.5);
         System.out.println("Alpha real= " + alpha.getReal() + " imaginary= " + alpha.getImaginary());
-        System.out.println("Beta real= " + beta.getReal() + " imaginary= " + alpha.getImaginary());
+        System.out.println("Beta real= " + beta.getReal() + " imaginary= " + beta.getImaginary());
         System.out.println("Alpha add Beta...");
         alpha.add(beta);
         System.out.println("Alpha real= " + alpha.getReal());
